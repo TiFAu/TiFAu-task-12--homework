@@ -1,0 +1,78 @@
+* { /*сбрасывает настройки по умолчанию для свойств margin и padding */
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+  }
+
+div {
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    width: 100vw;
+    height: 60vh;
+}
+
+div > p {
+    text-align: center;  
+}
+
+p {
+    margin-top:  2rem;
+}
+
+button {
+    position: fixed;
+    top: 70vh;
+    left: 20vw;
+    width: 60vw;
+    height: 10vh;
+    border-radius: 2rem;
+    background: rgba(0, 25, 221, 0.2);  
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.header > p {
+    font-size: xx-large;
+}
+
+.flex {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    z-index: 100;
+    width: 100vw;
+    height: 10vh;
+    background: rgba(0, 25, 221, 0.2);   
+}
+
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.4;
+    z-index: -1;
+  }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+  
+.footer > p > a,
+.footer > p > span {
+    font-weight: 900;
+}
