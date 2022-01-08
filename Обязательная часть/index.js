@@ -17,10 +17,10 @@ function addingCookies () {
     document.cookie = `dateOfLastVisit=${theCurrentDate}`
 }
 
-const addingDateToCookies = document.getElementById('addingDateToCookies')
-addingDateToCookies.onclick = addingCookies ()
+const addingDateToCookies = document.getElementById('addingDateToCookies');
+addingDateToCookies.onclick = addingCookies ();
 
-const customCookies = getCookies ();
+var customCookies = getCookies ();
 if ( "dateOfLastVisit" in customCookies ) {
     const outputField = document.getElementById('outputField')
     const lastDate = document.createElement("p");
