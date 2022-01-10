@@ -2,7 +2,7 @@ function getCookies() {
     var res = document.cookie
         .split("; ")
         .map(
-            x => {
+            x => {``
                 var tmp = x.split("=")
                 var elem = {}
                 elem[tmp[0]] = tmp[1]
